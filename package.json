@@ -1,0 +1,35 @@
+{
+  "name": "amplify-test",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/jest": "^22.1.2",
+    "@types/node": "^9.4.6",
+    "@types/react": "^16.0.5",
+    "@types/react-native": "^0.52.10",
+    "@types/react-test-renderer": "^16.0.1",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest-expo-ts": "^22.0.1",
+    "react-native-scripts-ts": "1.11.1",
+    "react-native-typescript-transformer": "^1.1.4",
+    "react-test-renderer": "16.2.0",
+    "tslib": "^1.7.1",
+    "typescript": "^2.5.2"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "build": "tsc -p tsconfig.json",
+    "android": "yarn build && react-native run-android",
+    "ios": "yarn build && react-native run-ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "jest-expo-ts"
+  },
+  "dependencies": {
+    "aws-amplify": "^0.2.6",
+    "aws-amplify-react-native": "^0.2.3",
+    "react": "16.2.0",
+    "react-native": "^0.53.0"
+  }
+}
